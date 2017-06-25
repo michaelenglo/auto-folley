@@ -11,10 +11,7 @@ def find_subtitle_in_srt(path_to_srt_file, subtitle_slice):
 
 	print "Subtitle is in position: " + str(i)
 	print subs[i].text
-	print subs[i].start.seconds
-	print subs[i].end.seconds
 	return i
-
 
 index_of_subtitle_slice = find_subtitle_in_srt ('subtitles/taxi_driver.srt', "I'll be over there waiting for you")
 index_of_subtitle_slice_end = find_subtitle_in_srt ('subtitles/taxi_driver.srt', "have a good time")
